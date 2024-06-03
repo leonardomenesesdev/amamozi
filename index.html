@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Você me ama mozi?</title>
+    <style>
+      #cont{
+        background-color: #F294C8;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        font-size: 30pt;
+      }
+        #bot{
+            border: none;
+            background-color: #BF0404;
+            color: whitesmoke;
+            padding: 10px;
+            width: 80px;
+            border-radius:50px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <h2>Você me amaaa?</h2>
+        <div style="margin: auto; width: 170px;">
+            <button id="bot" onclick="sim()" style="position: fixed; display: block;">Sim!</button>
+            <button id="bot" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">Não!</button>
+            <img src="" alt="" srcset="">
+        </div>
+    </div>
+    <script>
+        function sim(){
+            alert("Te amo mais minha lindaaaa")
+        }
+        function desvia(bot){
+            bot.style.position='absolute'
+            bot.style.bottom=gerapos(10, 90)
+            bot.style.left=gerapos(10, 90)
+        }
+        function gerapos(min, max){
+            return(Math.random()*(max-min)+min)+"%"
+        }
+    </script>
+</body>
+</html>
